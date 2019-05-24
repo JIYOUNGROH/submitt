@@ -1,0 +1,25 @@
+<html>
+    <head>
+           
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Hello, Twice!</title>
+    </head>
+    <body>
+        <div class="alert alert-danger" role="alert">
+        <트와이스 멤버 중 일본 국적을 가진 멤버들>
+        </div>
+        
+               
+        {% for m in japanese %}
+            <h2 style='color: #105ba1'>*{{ m.name }}</h2>
+            <h4>{{ m.age }}|
+            {{ m.birth }}|
+            {{ m.nationality }}|
+            {{ m.position }}|</h4>
+            <br>
+        {% endfor %}
+
+
+    </body>
+
+</html>
